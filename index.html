@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quellenangabe Flyer</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0 20px 0 20px;
+            overflow: hidden;
+        }
+        h1 {
+            color: aqua;
+            font-size: 30pt;
+            margin: 40px;
+        }
+        p {
+            color: lime;
+            transition: 0.2s;
+            margin: 30px;
+        }
+        p:hover {
+            color: #a0ffa0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quellenangabe Flyer Astrophysik</h1>
+    <main></main>
+    <script>
+        [
+            'https://www.lernhelfer.de/schuelerlexikon/physik-abitur/artikel/weltbilder#:~:text=Das%20heliozentrische%20Weltbild%20ist%20eine,Weltbild%20in%20jahrzehntelanger%20Arbeit%20entwickelte.',
+            'https://www.lernhelfer.de/schuelerlexikon/geschichte/artikel/ein-neues-weltbild#',
+            'https://www.yaclass.at/p/physik/10-schulstufe/newtonsche-gravitationstheorie-19368/historische-grundlagen-19369/re-da032ef7-9be1-4e98-ba00-8e8417df18b7',
+            'https://www.leifiphysik.de/astronomie/planetensystem/grundwissen/erstes-keplersches-gesetz#:~:text=Erstes%20KEPLERsches%20Gesetz-,Die%20Planeten%20bewegen%20sich%20auf%20elliptischen%20Bahnen%2C%20in,einem%20Brennpunkt%20die%20Sonne%20steht.&text=Die%20Sonne%20befindet%20sich%20nicht,Der%20andere%20Brennpunkt%20ist%20leer.',
+            'https://www.leifiphysik.de/astronomie/planetensystem/grundwissen/zweites-keplersches-gesetz',
+            'https://www.leifiphysik.de/astronomie/planetensystem/grundwissen/drittes-keplersches-gesetz',
+            'https://studysmarter-mediafiles.s3.amazonaws.com/media/1699086/summary_images/Milchstra%C3%9Fe_VvmBT0n.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4OLDUDE42UZHAIET%2F20220708%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20220708T183948Z&X-Amz-Expires=90000&X-Amz-SignedHeaders=host&X-Amz-Signature=c94dde0472e5b27471cb747231378d04ac534b4a125186400da7e33d2096e1ea',
+            'https://zeitreise-bb.de/wp-content/uploads/2018/06/Johannes_Kepler_1610.jpg'
+        ].forEach(src => {
+            document.getElementsByTagName('main').item(0).innerHTML += `<p onpointerdown="open('${src}', '', '')">${src}</p>`
+        });
+        
+    </script>
+</body>
+</html>
